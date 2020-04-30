@@ -1,0 +1,56 @@
+*
+  margin: 0
+  padding: 0
+html
+  height: 100%
+body
+  color: #d6d3cd
+  height: 100%
+a.active
+  color: #d81b60!important
+.card-image
+  width: 110px
+  display: flex
+  justify-content: center
+  align-items: center
+.spin
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 30px
+  color: #ffffff
+.title-text
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    height: 1px
+    width: 280px
+    bottom: -10px
+    background: #d81b60
+    left: 0
+#root
+  min-height: 100%
+  position: relative
+.content
+  padding-bottom: 90px
+.footer
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  height: 80px
+.card.horizontal
+  background-color: #141514!important
+.skill-block
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+@media (max-width: 990px)
+  .spin
+    display: none
+
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label
+  color: #d81b60
+nav .brand-logo
+  display: flex
