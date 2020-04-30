@@ -1,8 +1,14 @@
+@font-face
+  font-family: "Cascadia Code"
+  src: url(/assets/fonts/Cascadia.ttf)
+
+
 *
   margin: 0
   padding: 0
 html
   height: 100%
+  font-family: "Cascadia Code",sans-serif
 body
   color: #d6d3cd
   height: 100%
@@ -54,3 +60,12 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
   color: #d81b60
 nav .brand-logo
   display: flex
+.CodeMirror-scroll
+  font-family: "Cascadia Code", sans-serif
+
+.fa-react
+  &:hover
+    color: #65DAFB
+.fa-js-square
+  &:hover
+    color: #F7DF1E

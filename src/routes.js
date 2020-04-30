@@ -4,8 +4,9 @@ import Skills from "./pages/skills/skills";
 import About from "./pages/about/about";
 import Works from "./pages/works/works";
 // import Home from "./pages/home/home";
-import Blog from "./pages/blog/blog";
+// import Blog from "./pages/blog/blog";
 import Contact from "./pages/contact/contact";
+import Editor from "./pages/editor/editor";
 
 // <Route path="/" exact component={Home}/>
 function Routes() {
@@ -14,9 +15,10 @@ function Routes() {
             <Route path="/skills" component={Skills} />
             <Route path="/about" component={About} />
             <Route path="/works" component={Works} />
-            <Route path="/blog" component={Blog} />
+            {/*<Route path="/blog" component={Blog} />*/}
             <Route path="/contact" component={Contact} />
-            <Redirect to="/about" />
+            <Route path="/editor" component={Editor}/>
+            <Redirect to="/editor" />
         </Switch>
     );
 }

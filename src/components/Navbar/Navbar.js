@@ -13,7 +13,7 @@ function Navbar() {
                         <h5>Denis Fedorovici</h5>
                     </Link>
                     <ul id="nav-mobile" className="right">
-                        <li><NavLink to="/blog">Blog</NavLink></li>
+                        <li><NavLink to="/editor">Editor</NavLink></li>
                         <li><NavLink to="/works">Portfolio</NavLink></li>
                         <li><NavLink to="/skills">Skills</NavLink></li>
                         <li><NavLink to="/about">About me</NavLink></li>
