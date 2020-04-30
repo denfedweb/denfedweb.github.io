@@ -18,7 +18,7 @@ function Routes() {
             {/*<Route path="/blog" component={Blog} />*/}
             <Route path="/contact" component={Contact} />
             <Route path="/editor" component={Editor}/>
-            <Redirect to="/editor" />
+            <Redirect to="/about" />
         </Switch>
     );
 }

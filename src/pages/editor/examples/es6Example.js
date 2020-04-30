@@ -3,7 +3,7 @@ export const es6Example = "function addDigits(num) {\n" +
     "    \n" +
     "    const newNum = numArr.reduce((total, digit) =>{\n" +
     "        return total + Number(digit);\n" +
-    "    }, 0)\n" +
+    "    }, 0);\n" +
     "    if(numArr.length === 1){\n" +
     "        return newNum;    \n" +
     "    }  \n" +
@@ -12,5 +12,5 @@ export const es6Example = "function addDigits(num) {\n" +
     "\n" +
     "const finalValue = addDigits(38);\n" +
     "\n" +
-    "console.log(finalValue);";
+    "console.log(finalValue);\n";
 

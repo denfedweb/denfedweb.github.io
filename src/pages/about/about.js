@@ -21,7 +21,7 @@ function About() {
             </div>
             <div className={`col l8 ${style.rightBlock}`}>
                 <h5>Hi, my name is Denis</h5>
-                <p>I have been developing since 2018, I love everything related to javascript, this is my favorite programming language, and I tried a lot of them.</p>
+                <p>I have been developing since 2018, I love everything related to JavaScript, this is my favorite programming language, and I tried a lot of them.</p>
                 <h5>My work experience:</h5>
                 <ul>
                     <li>Sonero Com: 01/07/2019 - NOW</li>
@@ -34,7 +34,20 @@ function About() {
                     <li>Specialization: Information Technology</li>
                     <li>Period of study: 2015-2019</li>
                 </ul>
-                <a href="/assets/files/Denis's Resume.pdf" download>Download my CV</a>
+
+                <h5>Languages:</h5>
+                <ul>
+                    <li>Russian: Native or Bilingual Proficiency</li>
+                    <li>Romanian: Full Professional Proficiency</li>
+                    <li>English: Limited Working Proficiency</li>
+                </ul>
+
+                <h5>Interests:</h5>
+                <ul>
+                    <li>Soccer, IT, Tech, Сomputer games,</li>
+                    <li>TV series, self-education, JavaScript</li>
+                </ul>
+                {/*<a href="/assets/files/Denis's Resume.pdf" download>Download my CV</a>*/}
             </div>
         </div>
     );

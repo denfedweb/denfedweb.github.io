@@ -30,7 +30,7 @@ function Editor() {
             </div>
             {state ?
                 <div>
-                    <h2>ES6 Console</h2>
+                    <h2>ES6 editor</h2>
                     <Playground
                         codeText={es6Example}
                         es6Console
