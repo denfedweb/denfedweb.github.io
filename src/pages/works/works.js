@@ -23,7 +23,7 @@ function Works() {
                     </a>
                 </div>
                 <div className="col s12 m6 l4">
-                    <a href="https://github.com/denfedweb/denfedweb" rel="noopener noreferrer" target="_blank" className={style.imgWrap}>
+                    <a href="https://www.liberatingresearch.com/" rel="noopener noreferrer" target="_blank" className={style.imgWrap}>
                         <img src="/assets/img/lr.png" alt="img"/>
                         <div>
                             <i className="fas fa-search"/>
