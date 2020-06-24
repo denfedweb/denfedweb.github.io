@@ -24,7 +24,8 @@ function About() {
                 <p>I have been developing since 2018, I love everything related to JavaScript, this is my favorite programming language, and I tried a lot of them.</p>
                 <h5>My work experience:</h5>
                 <ul>
-                    <li>Sonero Com: 01/07/2019 - NOW</li>
+                    <li><a href="https://www.indrivo.com/" target="_blank" rel="noopener noreferrer">INDRIVO</a>: 22/07/2020 - NOW</li>
+                    <li>Sonero Com: 01/07/2019 - 01/07/2020</li>
                     <li>Freelance: 2018 - 2019</li>
                 </ul>
 
