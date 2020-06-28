@@ -130,12 +130,13 @@ function Skills() {
                 <div className="row skill-block">
                     <div className="col l5 m12 s12 card horizontal transparent">
                         <div className="card-image">
-                            <img src="/assets/img/test.png" alt="img"/>
+                            <img src="/assets/img/vue.png" alt="img"/>
                         </div>
                         <div className="card-stacked">
                             <div className={`card-content ${style.cardContent}`}>
                                 <ul>
-                                    <li>Jest</li>
+                                    <li>vue-router</li>
+                                    <li>vuex</li>
                                 </ul>
                             </div>
                         </div>
