@@ -17,6 +17,7 @@ function About() {
                     <li><i className="fab fa-telegram"/> <a href="http://t.me/denfedweb" rel="noopener noreferrer" target="_blank">t.me/denfedweb</a></li>
                     <li><i className="fab fa-linkedin"/> <a href="https://www.linkedin.com/in/denfedweb/" rel="noopener noreferrer" target="_blank">linkedin.com/in/denfedweb</a></li>
                     <li><i className="fab fa-facebook"/> <a href="https://www.facebook.com/denfedweb" rel="noopener noreferrer" target="_blank">facebook.com/denfedweb</a></li>
+                    <li><i className="fab fa-twitter"/> <a href="https://twitter.com/denfedweb" rel="noopener noreferrer" target="_blank">twitter.com/denfedweb</a></li>
                 </ul>
             </div>
             <div className={`col l8 ${style.rightBlock}`}>

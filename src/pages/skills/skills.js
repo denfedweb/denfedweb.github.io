@@ -10,6 +10,7 @@ function Skills() {
             <div className={style.cardBlock}>
                 <div className="row skill-block">
                     <div className="col l5 m12 s12 card horizontal transparent">
+                        <span className="lang">HTML5</span>
                         <div className="card-image">
                             <img src="/assets/img/html5.png" alt="img"/>
                         </div>
@@ -27,6 +28,7 @@ function Skills() {
                     </div>
                     <div className="col l2 m12 spin"><i className="fas fa-atom fa-spin"/></div>
                     <div className="col l5 m12 s12 card horizontal transparent">
+                        <span className="lang">CSS3</span>
                         <div className="card-image">
                             <img src="/assets/img/css3.png" alt="img"/>
                         </div>
@@ -43,6 +45,7 @@ function Skills() {
                 </div>
                 <div className="row skill-block">
                     <div className="col l5 m12 s12 card horizontal transparent">
+                        <span className="lang">JavaScript</span>
                         <div className="card-image">
                             <img src="/assets/img/js.png" alt="img"/>
                         </div>
@@ -57,6 +60,7 @@ function Skills() {
                     </div>
                     <div className="col l2 m12 spin"><i className="fas fa-atom fa-spin"/></div>
                     <div className="col l5 m12 s12 card horizontal transparent">
+                        <span className="lang">REST</span>
                         <div className="card-image">
                             <img src="/assets/img/rest.png" alt="img"/>
                         </div>
@@ -73,6 +77,7 @@ function Skills() {
                 </div>
                 <div className="row skill-block">
                     <div className="col l5 m12 s12 card horizontal transparent">
+                        <span className="lang">React</span>
                         <div className="card-image">
                             <img src="/assets/img/react.svg" alt="img"/>
                         </div>
@@ -87,6 +92,7 @@ function Skills() {
                     </div>
                     <div className="col l2 m12 spin"><i className="fas fa-atom fa-spin"/></div>
                     <div className="col l5 m12 s12 card horizontal transparent">
+                        <span className="lang">Redux</span>
                         <div className="card-image">
                             <img src="/assets/img/redux.png" alt="img"/>
                         </div>
@@ -101,6 +107,7 @@ function Skills() {
                 </div>
                 <div className="row skill-block">
                     <div className="col l5 m12 s12 card horizontal transparent">
+                        <span className="lang">Node.js</span>
                         <div className="card-image">
                             <img src="/assets/img/node.png" alt="img"/>
                         </div>
@@ -115,6 +122,7 @@ function Skills() {
                     </div>
                     <div className="col l2 m12 spin"><i className="fas fa-atom fa-spin"/></div>
                     <div className="col l5 m12 s12 card horizontal transparent">
+                        <span className="lang">Database</span>
                         <div className="card-image">
                             <img src="/assets/img/database.svg" alt="img"/>
                         </div>
@@ -129,6 +137,7 @@ function Skills() {
                 </div>
                 <div className="row skill-block">
                     <div className="col l5 m12 s12 card horizontal transparent">
+                        <span className="lang">Vue.js</span>
                         <div className="card-image">
                             <img src="/assets/img/vue.png" alt="img"/>
                         </div>
@@ -143,6 +152,7 @@ function Skills() {
                     </div>
                     <div className="col l2 m12 spin"><i className="fas fa-atom fa-spin"/></div>
                     <div className="col l5 m12 s12 card horizontal transparent">
+                        <span className="lang">Other</span>
                         <div className="card-image">
                             <img src="/assets/img/other.png" alt="img"/>
                         </div>
