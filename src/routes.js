@@ -7,6 +7,7 @@ const About = lazy(() => import('./pages/about/about'));
 const Works = lazy(() => import('./pages/works/works'));
 const Contact = lazy(() => import('./pages/contact/contact'));
 const Editor = lazy(() => import('./pages/editor/editor'));
+const Admin = lazy(() => import('./pages/admin/admin'));
 
 function Routes() {
     return (
@@ -17,6 +18,7 @@ function Routes() {
                 <Route path="/works" component={Works} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/editor" component={Editor}/>
+                <Route path="/admin" component={Admin}/>
                 <Redirect to="/about" />
             </Switch>
         </Suspense>
