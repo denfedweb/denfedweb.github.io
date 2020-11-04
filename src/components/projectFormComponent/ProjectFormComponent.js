@@ -37,11 +37,7 @@ function ProjectFormComponent(props) {
       image: imgValue,
       stack: stackValue.split(' ')
     }
-    axios.post('https://denfedweb-github-io.firebaseio.com/works.json', obj, {
-      headers: {
-        auth: token
-      }
-    }).then(() => {
+    axios.post(`https://denfedweb-github-io.firebaseio.com/works.json?auth=${token}`, obj).then(() => {
       window.location.reload();
     });
   }
@@ -52,11 +48,7 @@ function ProjectFormComponent(props) {
       image: imgValue,
       stack: stackValue.split(' ')
     }
-    axios.patch(`https://denfedweb-github-io.firebaseio.com/works/${projectId}.json`, obj, {
-      headers: {
-        auth: token
-      }
-    }).then(() => {
+    axios.patch(`https://denfedweb-github-io.firebaseio.com/works/${projectId}.json?auth=${token}`, obj).then(() => {
       window.location.reload();
     });
   }

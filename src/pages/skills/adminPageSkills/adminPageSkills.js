@@ -1,8 +1,11 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import ReactQuill from "react-quill";
 import axios from "axios";
+import {useSelector} from "react-redux";
 
 function AdminPageSkills() {
+  const auth = useSelector(state => state.auth);
+  const {token} = auth;
   const [leftForm, setLeftForm] = useState({
     leftTitle: '',
     leftLibs: ''
@@ -54,7 +57,7 @@ function AdminPageSkills() {
       },
     };
 
-    axios.post('https://denfedweb-github-io.firebaseio.com/skills.json', newSkill).then(()=>{
+    axios.post(`https://denfedweb-github-io.firebaseio.com/skills.json?auth=${token}`, newSkill).then(()=>{
       setLeftForm({
         leftTitle: '',
         leftLibs: ''
@@ -70,7 +73,7 @@ function AdminPageSkills() {
   }
 
   function removeBlock(id){
-    axios.delete(`https://denfedweb-github-io.firebaseio.com/skills/${id}.json`).then(()=>{
+    axios.delete(`https://denfedweb-github-io.firebaseio.com/skills/${id}.json?auth=${token}`).then(()=>{
       const newSkills = skills.filter(skill => skill.id !== id);
       setSkills(newSkills);
       alert('deleted');
@@ -106,7 +109,7 @@ function AdminPageSkills() {
         libs: rightForm.rightLibs.split(' ')
       },
     };
-    axios.patch(`https://denfedweb-github-io.firebaseio.com/skills/${editedId}.json`, newSkill).then(()=> {
+    axios.patch(`https://denfedweb-github-io.firebaseio.com/skills/${editedId}.json?auth=${token}`, newSkill).then(()=> {
       alert('Updated');
       cancelEdit();
     })

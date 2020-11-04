@@ -13,6 +13,8 @@ function About() {
   const [content, setContent] = useState('');
   const [contentLoading, setContentLoading] = useState(true);
   const [imgLoading, setImgLoading] = useState(true);
+  const auth = useSelector(state => state.auth);
+  const {token} = auth;
 
   const {edited} = editedState;
   const imgModules = {
@@ -48,13 +50,13 @@ function About() {
   }, []);
 
   function updatePhoto() {
-    axios.patch('https://denfedweb-github-io.firebaseio.com/about/adminImg.json', {img: imgValue}).then(()=> {
+    axios.patch(`https://denfedweb-github-io.firebaseio.com/about/adminImg.json?auth=${token}`, {img: imgValue}).then(()=> {
       alert("Updated");
     });
   }
 
   function updateContent(){
-    axios.patch('https://denfedweb-github-io.firebaseio.com/about/htmlContent.json', {content}).then(()=> {
+    axios.patch(`https://denfedweb-github-io.firebaseio.com/about/htmlContent.json?auth=${token}`, {content}).then(()=> {
       alert("Updated");
     });
   }

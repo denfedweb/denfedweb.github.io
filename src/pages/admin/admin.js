@@ -34,19 +34,25 @@ function Admin() {
     });
   }
 
+  function handleKeyPress(event) {
+    if(event.key === 'Enter'){
+      sendForm();
+    }
+  }
+
   return (
     <div>
       <h3 className="title-text">Admin</h3>
       <div className={style.form}>
         <div className="row">
           <div className="input-field col s12">
-            <input onChange={onChangeForm} id="email" name="email" type="email"/>
+            <input onChange={onChangeForm} id="email" name="email" type="email" onKeyPress={handleKeyPress}/>
             <label htmlFor="email">Email</label>
           </div>
         </div>
         <div className="row">
           <div className="input-field col s12">
-            <input onChange={onChangeForm} id="password" name="password" type="password"/>
+            <input onChange={onChangeForm} id="password" name="password" type="password" onKeyPress={handleKeyPress}/>
             <label htmlFor="password">Password</label>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import {useSelector} from "react-redux";
 
 function AdminSocialLinks() {
   const [form, setForm] = useState({
@@ -8,7 +9,8 @@ function AdminSocialLinks() {
     text: ''
   });
   const [links, setLinks] = useState([]);
-
+  const auth = useSelector(state => state.auth);
+  const {token} = auth;
   function onChangeForm(e) {
     setForm({...form, returnSecureToken: true,  [e.target.name]: e.target.value});
   }
@@ -25,7 +27,7 @@ function AdminSocialLinks() {
   }, [])
 
   function addSocialLink(){
-    axios.post('https://denfedweb-github-io.firebaseio.com/about/socialLinks.json', form).then(()=>{
+    axios.post(`https://denfedweb-github-io.firebaseio.com/about/socialLinks.json?auth=${token}`, form).then(()=>{
       setLinks([...links, form]);
       setForm({
         fontawesome: '',
@@ -36,7 +38,7 @@ function AdminSocialLinks() {
   }
 
   function remove(id) {
-    axios.delete(`https://denfedweb-github-io.firebaseio.com/about/socialLinks/${id}.json`).then(()=>{
+    axios.delete(`https://denfedweb-github-io.firebaseio.com/about/socialLinks/${id}.json?auth=${token}`).then(()=>{
       const newLinks = links.filter(link => link.id !== id);
       setLinks(newLinks);
     });

@@ -2,8 +2,11 @@ import React, {Fragment, useEffect, useState} from 'react';
 import ProjectFormComponent from "../../../components/projectFormComponent/ProjectFormComponent";
 import style from './worksAdminPanel.module.sass';
 import axios from 'axios';
+import {useSelector} from "react-redux";
 
 function WorksAdminPage() {
+  const auth = useSelector(state => state.auth);
+  const {token} = auth;
   const [worksList, setWorksList] = useState([]);
   const [editedProject, setEditedProject] = useState({});
   const [editedFlag, setEditedFlag] = useState(false);
@@ -20,7 +23,7 @@ function WorksAdminPage() {
   }, [])
 
   function removeWorkProject(id){
-    axios.delete(`https://denfedweb-github-io.firebaseio.com/works/${id}.json`).then(()=>{
+    axios.delete(`https://denfedweb-github-io.firebaseio.com/works/${id}.json?auth=${token}`).then(()=>{
       const newWorksObj = worksList.filter(item => item.id !== id);
       setWorksList(newWorksObj);
     });
