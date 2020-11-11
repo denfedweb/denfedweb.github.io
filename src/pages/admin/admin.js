@@ -3,7 +3,7 @@ import style from "../contact/contact.module.sass";
 import axios from 'axios';
 import { useHistory } from "react-router-dom";
 import {useDispatch} from "react-redux";
-import {logged} from "../../redux/actions";
+import {getAuthToken, logged} from "../../redux/actions";
 
 function Admin() {
   const [form, setForm] = useState({});
@@ -27,6 +27,7 @@ function Admin() {
       localStorage.setItem('fb-token-exp', expData.toString());
       localStorage.setItem('fb-token', data.idToken);
       dispatch(logged());
+      dispatch(getAuthToken());
       history.push('/');
     }).catch(err => {
       console.error(err);
